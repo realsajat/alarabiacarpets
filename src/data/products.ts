@@ -26,6 +26,24 @@ export const sofa: Product[] = [
     name: "Premium Barkia Set",
     description: "Luxurious Barkia with elegant finishing",
     image: "/placeholder.svg"
+  },
+  {
+    id: 4,
+    name: "Designer Corner Sofa",
+    description: "Elegant L-shaped sofa perfect for modern homes",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 5,
+    name: "Executive Majlis Collection",
+    description: "High-end majlis set with premium upholstery",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 6,
+    name: "Luxury Recliner Set",
+    description: "Comfortable recliners with premium leather finish",
+    image: "/placeholder.svg"
   }
 ];
 
