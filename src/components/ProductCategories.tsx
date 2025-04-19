@@ -1,6 +1,6 @@
 
 import { Card } from "@/components/ui/card";
-import { Sofa, Carpet, Curtain } from "lucide-react";
+import { Sofa, SquareAsterisk, Square } from "lucide-react";
 
 const categories = [
   {
@@ -10,7 +10,7 @@ const categories = [
   },
   {
     title: "Carpets & Grass Carpets",
-    icon: Carpet,
+    icon: SquareAsterisk,
     description: "Luxurious carpets for every space",
   },
   {
@@ -20,7 +20,7 @@ const categories = [
   },
   {
     title: "Curtains & Rollers",
-    icon: Curtain,
+    icon: Square,
     description: "Elegant window treatments",
   },
 ];

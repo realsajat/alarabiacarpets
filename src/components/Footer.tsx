@@ -1,5 +1,5 @@
 
-import { WhatsApp, Phone, Mail } from "lucide-react";
+import { MessageSquare, Phone, Mail } from "lucide-react";
 
 const Footer = () => {
   const handleWhatsAppClick = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
                 onClick={handleWhatsAppClick}
                 className="flex items-center gap-2 hover:text-secondary"
               >
-                <WhatsApp className="w-5 h-5" />
+                <MessageSquare className="w-5 h-5" />
                 WhatsApp
               </button>
               <div className="flex items-center gap-2">
