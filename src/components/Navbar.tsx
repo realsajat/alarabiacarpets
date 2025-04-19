@@ -1,5 +1,5 @@
 
-import { MessageSquare, Menu } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -12,6 +12,13 @@ import {
 const Navbar = () => {
   const handleWhatsAppClick = () => {
     window.open("https://wa.me/+97412345678", "_blank");
+  };
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -27,37 +34,55 @@ const Navbar = () => {
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4">
                       <li className="row-span-3">
-                        <a href="#products" className="block p-2 hover:bg-accent rounded-md">
+                        <button 
+                          onClick={() => scrollToSection('products')} 
+                          className="block w-full text-left p-2 hover:bg-accent rounded-md"
+                        >
                           All Products
-                        </a>
+                        </button>
                       </li>
                       <li>
-                        <a href="#barkia" className="block p-2 hover:bg-accent rounded-md">
+                        <button 
+                          onClick={() => scrollToSection('barkia')} 
+                          className="block w-full text-left p-2 hover:bg-accent rounded-md"
+                        >
                           Barkia & PVC Barkia
-                        </a>
+                        </button>
                       </li>
                       <li>
-                        <a href="#carpets" className="block p-2 hover:bg-accent rounded-md">
+                        <button 
+                          onClick={() => scrollToSection('carpets')} 
+                          className="block w-full text-left p-2 hover:bg-accent rounded-md"
+                        >
                           Carpets & Grass Carpets
-                        </a>
+                        </button>
                       </li>
                       <li>
-                        <a href="#sofas" className="block p-2 hover:bg-accent rounded-md">
+                        <button 
+                          onClick={() => scrollToSection('sofas')} 
+                          className="block w-full text-left p-2 hover:bg-accent rounded-md"
+                        >
                           Sofas & Majlis
-                        </a>
+                        </button>
                       </li>
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <a href="#services" className="block p-2">
+                  <button 
+                    onClick={() => scrollToSection('services')}
+                    className="block p-2"
+                  >
                     Services
-                  </a>
+                  </button>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <a href="#contact" className="block p-2">
+                  <button 
+                    onClick={() => scrollToSection('contact')}
+                    className="block p-2"
+                  >
                     Contact
-                  </a>
+                  </button>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
