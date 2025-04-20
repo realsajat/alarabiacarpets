@@ -23,7 +23,7 @@ const Products = () => {
                   {product.description}
                 </p>
                 <a 
-                  href="https://wa.me/+97412345678"
+                  href="https://wa.me/+97455512858"
                   target="_blank"
                   className="text-primary hover:text-primary/80"
                 >

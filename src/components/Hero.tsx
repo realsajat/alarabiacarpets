@@ -4,7 +4,7 @@ import { MessageSquare } from "lucide-react";
 
 const Hero = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/+97412345678", "_blank");
+    window.open("https://wa.me/+97455512858", "_blank");
   };
 
   return (

@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 
 const Contact = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/+97412345678", "_blank");
+    window.open("https://wa.me/+97455512858", "_blank");
   };
 
   return (
@@ -22,11 +22,11 @@ const Contact = () => {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Phone className="text-primary" />
-                    <span>+974 1234 5678</span>
+                    <span>+974 5551 2858</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="text-primary" />
-                    <span>info@company.qa</span>
+                    <span>alarabiacarpet@gmail.com</span>
                   </div>
                 </div>
               </div>
